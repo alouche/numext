@@ -1,0 +1,2 @@
+content     numext   chrome/content/
+overlay chrome://browser/content/browser.xul chrome://numext/content/numext.xul

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<overlay id="numtabs" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<script type="application/x-javascript" src="chrome://numext/content/script.js"></script>
+
+<keyset>
+  <key id="jumpbar" modifiers="alt" key="X" oncommand="numExt.switchCmdB();" />
+  <key id="selectTab9" modifiers="alt" key="1" oncommand="numExt.selectTabNum(9);" />
+  <key id="selectTab10" modifiers="alt" key="2" oncommand="numExt.selectTabNum(10);" />
+  <key id="selectTab11" modifiers="alt" key="3" oncommand="numExt.selectTabNum(11);" />
+  <key id="selectTab12" modifiers="alt" key="4" oncommand="numExt.selectTabNum(12);" />
+  <key id="selectTab13" modifiers="alt" key="5" oncommand="numExt.selectTabNum(13);" />
+  <key id="selectTab14" modifiers="alt" key="6" oncommand="numExt.selectTabNum(14);" />
+  <key id="selectTab15" modifiers="alt" key="7" oncommand="numExt.selectTabNum(15);" />
+  <key id="selectTab16" modifiers="alt" key="8" oncommand="numExt.selectTabNum(16);" />
+  <key id="selectTab17" modifiers="alt" key="9" oncommand="numExt.selectTabNum(17);" />
+</keyset>
+
+ <menupopup id="menu_ToolsPopup">
+  <menuitem label="NumExt (exec)" oncommand="numExt.switchCmdB();"/>
+ </menupopup>
+
+<vbox id="appcontent" style="padding-left: 1px; padding-top: 1px; background-color: white;" >
+<label  hidden="true" id="parserCmd" value="NumExt (Assistant) :: #type 'assit off' to turn off the assistant - #type help and press enter // or start typing a command to have the assistant display some hints" style="background-color: white; color: #404243;" />
+</vbox>
+
+	<statusbar id="status-bar">
+		<statusbarpanel id="cmdBExePanel" hidden="true">
+			<label  id="statuslb" value="NumExt" />
+			<textbox id="cmdExeTb" style="-moz-user-focus: normal;" value="" onkeyup="{if (event.keyCode==13) numExt.switchCmdBExe(); else numExt.showParser();}"/>
+		</statusbarpanel>
+	</statusbar>
+</overlay>

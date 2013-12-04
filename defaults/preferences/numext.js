@@ -1,0 +1,9 @@
+pref("extensions.numext.execKey", "X");
+pref("extensions.numext.aliasColora", "CadetBlue");
+pref("extensions.numext.aliasColorb", "Coral");
+pref("extensions.numext.aliasColorc", "DarkSeaGreen");
+pref("extensions.numext.aliasColord", "GoldenRod");
+pref("extensions.numext.aliasColore", "Khaki");
+pref("extensions.numext.numSeperator", "");
+pref("extensions.numext.numAssistant", "on");
+pref("extensions.numext.numNumb", "on");
